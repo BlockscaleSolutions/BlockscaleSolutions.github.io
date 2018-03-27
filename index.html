@@ -1,1 +1,439 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+        <!-- Meta Data -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="description" content="Blockscale Solutions provides organizations globally with a trusted partner in advancing your Blockchain strategies through our core Product and Advisory offerrings.">
+
+        <link rel="icon" type="image/png" href="http://blockscalesolutions.com/img/icons/favicon-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="http://blockscalesolutions.com/img/icons/favicon-160x160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="http://blockscalesolutions.com/img/icons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="http://blockscalesolutions.com/img/icons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="http://blockscalesolutions.com/img/icons/favicon-16x16.png" sizes="16x16">
+        <link rel="image_src" href="http://blockscalesolutions.com/img/icons/share.jpg">
+
+        <link rel="apple-touch-icon" href="http://blockscalesolutions.com/img/icons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="http://blockscalesolutions.com/img/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="http://blockscalesolutions.com/img/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="http://blockscalesolutions.com/img/icons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="http://blockscalesolutions.com/img/icons/apple-touch-icon-180x180.png">
+
+        <title>Blockscale Solutions - Leveraging Blockchain Technology</title>
+
+        <!-- Facebook Open Graph -->
+        <meta property="og:locale" content="en_CA">
+		<meta property="og:type" content="website">
+        <meta property="og:title" content="Blockscale Solutions - Leveraging Blockchain Technology">
+        <meta property="og:site_name" content="Blockscale Solutions">
+        <meta property="og:description" content="Blockscale Solutions provides organizations globally with a trusted partner in advancing your Blockchain strategies through our core Product and Advisory offerrings.">
+        <meta property="og:url" content="http://blockscalesolutions.com/">
+        <meta property="og:image" content="http://blockscalesolutions.com/img/icons/share.jpg">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,800" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="/lib/common.css" rel="stylesheet" type="text/css">
+
+        <!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+        
+        <!-- Font Awesome -->
+        <script defer src="https://pro.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-816IUmmhAwCMonQiPZBO/PTgzgsjHtpb78rpsLzldhb4HZjFzBl06Z3eu4ZuwHTz" crossorigin="anonymous"></script>
+        
+        <!-- Show/Hide -->
+		<script>
+
+			$(document).ready(function(){
+				
+				$('#open-menu a').click(function() {
+					$('#mobile-menu').addClass('open-it');
+				});
+				
+				$('#close-menu a').click(function() {
+					$('#mobile-menu').removeClass('open-it');
+				});
+				
+                if ($(window).width() > 767) {
+                    var headerOffset = $('#header-position').position().top;
+                    if ($(window).scrollTop() >= headerOffset) {
+                        $('#header').addClass('sticky');
+                    } else {
+                        $('#header').removeClass('sticky');
+                    }
+
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() >= headerOffset) {
+                            $('#header').addClass('sticky');
+                        } else {
+                            $('#header').removeClass('sticky');
+                        }
+                    });
+
+                    if ($(window).width() > 1249) {
+                        var headerSize = 176;
+                    } else if ($(window).width() > 1023) {
+                        var headerSize = 156;
+                    } else if ($(window).width() > 767) {
+                        var headerSize = 142;
+                    } else {
+                        var headerSize = 176;
+                    }                
+
+                    if ($(window).scrollTop() >= headerSize) {
+                        $('#header').addClass('shadow');
+                    } else {
+                        $('#header').removeClass('shadow');
+                    }
+
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() >= headerSize) {
+                            $('#header').addClass('shadow');
+                        } else {
+                            $('#header').removeClass('shadow');
+                        }
+                    });
+                } else {
+                    $('#header').removeClass('sticky');
+                    $('#header').addClass('shadow');
+                }
+                
+                $(window).resize(function() {
+                    if ($(window).width() > 767) {
+                        var headerOffset = $('#header-position').position().top;
+                        if ($(window).scrollTop() >= headerOffset) {
+                            $('#header').addClass('sticky');
+                        } else {
+                            $('#header').removeClass('sticky');
+                        }
+
+                        $(window).scroll(function() {
+                            if ($(window).scrollTop() >= headerOffset) {
+                                $('#header').addClass('sticky');
+                            } else {
+                                $('#header').removeClass('sticky');
+                            }
+                        });
+
+                        if ($(window).width() > 1249) {
+                            var headerSize = 176;
+                        } else if ($(window).width() > 1023) {
+                            var headerSize = 156;
+                        } else if ($(window).width() > 767) {
+                            var headerSize = 142;
+                        }               
+
+                        if ($(window).scrollTop() >= headerSize) {
+                            $('#header').addClass('shadow');
+                        } else {
+                            $('#header').removeClass('shadow');
+                        }
+
+                        $(window).scroll(function() {
+                            if ($(window).scrollTop() >= headerSize) {
+                                $('#header').addClass('shadow');
+                            } else {
+                                $('#header').removeClass('shadow');
+                            }
+                        });
+                    } else {
+                        $('#header').removeClass('sticky');
+                        $('#header').addClass('shadow');
+                    }
+                });
+            });
+
+        </script>
+
+        <!-- Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116294904-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-116294904-1');
+        </script>
+
+    </head>
+    <body>
+    
+        <div id="mobile-menu">
+            <div id="close-menu"><a href="javascript:void(0);"><i class="fal fa-times-circle"></i></a></div>
+            <div id="mobile-navigation">
+                <a href="#about">About</a><br>
+                <a href="#solutions">Solutions</a><br>
+                <a href="#team">Team</a><br>
+                <a href="#contact">Contact</a>
+            </div>
+            <div id="mobile-social">
+            	<a href="https://www.linkedin.com/company/blockscale-solutions-inc/" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://github.com/BlockscaleSolutions" target="_blank"><i class="fab fa-github"></i></a><a href="https://twitter.com/BlockscaleSolns" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <a name="top"></a>
+        <div id="header-full">
+            <div id="header-height">
+                <div id="header-social" class="common-pad">
+                    <div id="header-social-wrapper" class="wrapper">
+                        <a href="https://www.linkedin.com/company/blockscale-solutions-inc/" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://github.com/BlockscaleSolutions" target="_blank"><i class="fab fa-github"></i></a><a href="https://twitter.com/BlockscaleSolns" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div id="header-position">
+                    <div id="header">
+                        <div id="header-pad" class="common-pad">
+                            <div id="header-wrapper" class="wrapper">
+                                <div id="blockscale-solutions">
+                                    <a href="#top"><img src="/img/common/blockscale-solutions.png" srcset="/img/common/blockscale-solutions@2x.png 2x" alt="Blockscale Solutions"></a>
+                                </div>
+                                <div id="navigation">
+                                    <a href="#about" class="first">About</a><a href="#solutions">Solutions</a><a href="#team">Team</a><a href="#contact">Contact</a>
+                                </div>
+                                <div id="open-menu"><a href="javascript:void(0);"><i class="far fa-bars"></i></a></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div id="intro-full">
+            <div id="intro-icon" class="common-pad">
+                <div id="intro-wrapper" class="wrapper">
+                    <div id="intro-text">
+                        Leveraging Blockchain technology to advise on and develop customized product solutions for our client partners. 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about-full" class="common-pad">
+            <div id="about-wrapper" class="wrapper">
+                <a name="about" class="smooth-link"></a>
+                <div class="section-title">
+                    <h2>About Us</h2>
+                </div>
+                <div id="about-content" class="pad-top pad-bottom">
+                    Blockscale Solutions provides organizations globally with a trusted partner in advancing your Blockchain strategies through our core service offerings:<br>
+                    <br>
+                    <br>
+                    <h3>Advisory Services</h3>
+                    We work closely with our client partners to first understand what their business objectives and core project drivers are. Based on this level of understanding, we then develop a framework that identifies a clear roadmap to maximize the benefits of any contemplated Blockchain solution.<br>
+                    <br>
+                    <br>
+                    <h3>Product Development Services</h3>
+                    Our experienced team of developers, system architects and engineers  create Blockchain and Artificial Intelligence-based Applications and Products for a variety of needs, leveraging the inherent benefits of Blockchain technology to address key areas of opportunity for your organization:<br>
+                    <br>
+                    <ul id="about-list">
+                        <li>
+                            <div class="about-icon"><i class="fas fa-chess-board"></i></div>
+                            <h4>Transparency</h4>
+                        </li>
+                        <li>
+                            <div class="about-icon"><i class="far fa-handshake"></i></div>
+                            <h4>Trust</h4>
+                        </li>
+                        <li>
+                            <div class="about-icon"><i class="far fa-share-alt"></i></div>
+                            <h4>Data Availability,<br>Integrity & Sharing</h4>
+                        </li>
+                        <li>
+                            <div class="about-icon"><i class="far fa-lock"></i></div>
+                            <h4>Security</h4>
+                        </li>
+                        <li>
+                            <div class="about-icon"><i class="far fa-clock"></i></div>
+                            <h4>Efficiency</h4>
+                        </li>
+                        <li>
+                            <div class="about-icon"><i class="far fa-arrow-alt-circle-down"></i></div>
+                            <h4>Reduce Costs</h4>
+                        </li>
+                    </ul><br>
+                    <br>
+                    <h3>Education Services</h3>
+                    If you’re looking to develop your in-house IT team with a solid foundation in Blockchain technical training - or need guidance for your overall organization with ideating on applicable use cases - our education division at the <a href="http://www.blockchainlearninggroup.com/" target="_blank">Blockchain Learning Group</a> is there to help. They have trained over 200 developers (and growing) globally already, and specialize in accelerating Blockchain journeys through immersive, hands-on Education and Ideation programs.
+                </div>
+            </div>
+        </div>
+        <div id="solutions-full" class="common-pad">
+            <div id="solutions-wrapper" class="wrapper">
+                <a name="solutions" class="smooth-link"></a>
+                <div class="section-title">
+                    <h2>Product Solutions</h2>
+                </div>
+                <div id="solutions-content" class="pad-top">
+                    Blockscale Solutions supports our markets served by offering customized product and development services, including the following:<br>
+                    <br>
+                    <ul id="solutions-list">
+                        <li class="land">
+                            <div class="solutions-icon"><i class="fas fa-map"></i></div>
+                            <div class="solutions-text"><h4 class="tight">Land Registry</h4></div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="solutions-icon"><i class="fal fa-hand-paper"></i></div>
+                            <div class="solutions-text"><h4 class="tight">Loyalty Program</h4></div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="solutions-icon"><i class="fal fa-cogs"></i></div>
+                            <div class="solutions-text"><h4 class="tight">Automated Procurement & Contractor/Roster Management</h4></div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="solutions-icon"><i class="fal fa-edit"></i></div>
+                            <div class="solutions-text"><h4 class="tight">Contract & Project Management</h4></div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="solutions-icon"><i class="fal fa-shopping-bag"></i></div>
+                            <div class="solutions-text"><h4 class="tight">Asset Marketplace</h4></div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="solutions-icon"><i class="fal fa-check-circle"></i></div>
+                            <div class="solutions-text"><h4 class="tight">Voting</h4></div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="solutions-icon"><i class="fal fa-truck" data-fa-transform="flip-h"></i></div>
+                            <div class="solutions-text"><h4 class="tight">Supply Chain & Logistics</h4></div>
+                            <div class="clear"></div>
+                        </li>
+                        <li>
+                            <div class="solutions-icon"><i class="fal fa-plus-circle"></i></div>
+                            <div class="solutions-text"><h4 class="tight">Disaster Relief & Aid</h4></div>
+                            <div class="clear"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="team-full" class="common-pad">
+            <div id="team-wrapper" class="wrapper">
+                <a name="team" class="smooth-link"></a>
+                <div class="section-title">
+                    <h2>Our Team</h2>
+                </div>
+                <div id="team-content" class="pad-top pad-bottom">
+                    <div class="team-img">
+                        <img src="/img/common/team-chami.jpg" srcset="/img/common/team-chami@2x.jpg 2x" alt="Chami Akmeemana">
+                    </div>
+                    <div class="team-text">
+                        <h4 class="names">Chami Akmeemana</h4>
+                        <h5>Chief Executive Officer</h5>
+                        <br>
+                        Chami Akmeemana is a Blockchain and AI Specialist. He pursued a Ph.D. in Bioceramic Engineering at Queen Mary, University of London, until deciding to forgo an academic career in favor of Law Enforcement. In 2002, he joined London’s Metropolitan Police.<br>
+                        <br>
+                        Chami has had 4 successful exists over the last decade and is passionate about the intersection of technology, business and social good. His experience includes serving as Director of regulatory and government affairs at ConsenSys Inc; Fintech Advisor to the Ontario Securities Commission; and Managing Director, Fintech and blockchain at the Global Risk Institute.<br>
+                        <br>
+                        Chami is also the Chairman of the Blockchain Association Australia and a faculty member of the Blockchain Research Institute.
+                    </div>
+                    <div class="clear"></div>
+                    <div class="team-divider"></div>
+                    <div class="team-img">
+                        <img src="/img/common/team-murtaza.jpg" srcset="/img/common/team-murtaza@2x.jpg 2x" alt="Murtaza Tawawala">
+                    </div>
+                    <div class="team-text">
+                        <h4 class="names">Murtaza Tawawala</h4>
+                        <h5>Chief Operating Officer</h5>
+                        <br>
+                        Murtaza brings over 20 years of experience in training, marketing, project management and product development for both global firms and Canadian companies. He is an accomplished training and marketing professional with extensive experience in the technology, insurance, financial, transportation and retail industries.
+                    </div>
+                    <div class="clear"></div>
+                    <div class="team-divider"></div>
+                    <div class="team-img">
+                        <img src="/img/common/team-adam.jpg" srcset="/img/common/team-adam@2x.jpg 2x" alt="Adam Lemmon">
+                    </div>
+                    <div class="team-text">
+                        <h4 class="names">Adam Lemmon</h4>
+                        <h5>VP, Training & Operations</h5>
+                        <br>
+                        Adam is a technology enthusiast and passionate engineer. Prior to joining Blockchain Learning Group, Adam contributed to a wide range of Blockchain projects as well as lead various development workshops in Australia and Canada. Adam is inspired by the potential of Blockchain technology and actively is helping to build the global community.
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div id="contact-full" class="common-pad">
+            <div id="contact-wrapper" class="wrapper">
+                <a name="contact" class="smooth-link"></a>
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                </div>
+                <div id="contact-content" class="pad-top pad-bottom">
+                    Looking to find out more information or how Blockscale Solutions - or <a href="http://www.blockchainlearninggroup.com/" target="_blank">Blockchain Learning Group</a> - can help transform your strategies into action, please contact us at <a href="tel:+14165008518" class="phone">+1&nbsp;(416)&nbsp;500-8518</a>
+                    <div id="contact-logos">
+                        <div id="contact-blockscale">
+                            <div class="contact-logo-wrapper"><img src="/img/common/blockscale-solutions.png" srcset="/img/common/blockscale-solutions@2x.png 2x" alt="Blockscale Solutions"></div>
+                        </div>
+                        <div id="contact-blockchain">
+                            <div class="contact-logo-wrapper"><a href="http://www.blockchainlearninggroup.com/" target="_blank"><img src="/img/common/blockchain-learning-group.png" srcset="/img/common/blockchain-learning-group@2x.png 2x" alt="Blockchain Learning Group"></a></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="common-pad">
+            &copy; 2018 Blockscale Solutions Inc.<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span><br>Site by <a href="http://takeoverstudio.com" target="_blank" title="Website by Takeover Studio">Takeover</a>
+            <div id="footer-social">
+                <a href="https://www.linkedin.com/company/blockscale-solutions-inc/" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://github.com/BlockscaleSolutions" target="_blank"><i class="fab fa-github"></i></a><a href="NEED" target="_blank"><i class="fab fa-twitter"></i></a>    
+            </div>
+        </div>
+                    
+        <!-- Smooth Scroll -->
+        <script>
+            jQuery(function($) {
+       		$(document).ready(function(){
+			$(window).load(function() {	
+                // Select all links with hashes
+                $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .not('[href="javascript:void(0)"]')
+                .click(function(event) {
+                    // On-page links
+                    if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+                    && 
+                    location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 500, function() {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                            $("#close-menu a").trigger('click');
+                        }
+                    }
+                });
+			});
+            });
+            });
+
+        </script>
+        
+    </body>
+</html>
