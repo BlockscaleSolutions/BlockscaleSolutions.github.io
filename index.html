@@ -41,23 +41,23 @@
 
         <!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-        
+
         <!-- Font Awesome -->
         <script defer src="https://pro.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-816IUmmhAwCMonQiPZBO/PTgzgsjHtpb78rpsLzldhb4HZjFzBl06Z3eu4ZuwHTz" crossorigin="anonymous"></script>
-        
+
         <!-- Show/Hide -->
 		<script>
 
 			$(document).ready(function(){
-				
+
 				$('#open-menu a').click(function() {
 					$('#mobile-menu').addClass('open-it');
 				});
-				
+
 				$('#close-menu a').click(function() {
 					$('#mobile-menu').removeClass('open-it');
 				});
-				
+
                 if ($(window).width() > 767) {
                     var headerOffset = $('#header-position').position().top;
                     if ($(window).scrollTop() >= headerOffset) {
@@ -82,7 +82,7 @@
                         var headerSize = 142;
                     } else {
                         var headerSize = 176;
-                    }                
+                    }
 
                     if ($(window).scrollTop() >= headerSize) {
                         $('#header').addClass('shadow');
@@ -101,7 +101,7 @@
                     $('#header').removeClass('sticky');
                     $('#header').addClass('shadow');
                 }
-                
+
                 $(window).resize(function() {
                     if ($(window).width() > 767) {
                         var headerOffset = $('#header-position').position().top;
@@ -125,7 +125,7 @@
                             var headerSize = 156;
                         } else if ($(window).width() > 767) {
                             var headerSize = 142;
-                        }               
+                        }
 
                         if ($(window).scrollTop() >= headerSize) {
                             $('#header').addClass('shadow');
@@ -162,7 +162,7 @@
 
     </head>
     <body>
-    
+
         <div id="mobile-menu">
             <div id="close-menu"><a href="javascript:void(0);"><i class="fal fa-times-circle"></i></a></div>
             <div id="mobile-navigation">
@@ -205,7 +205,7 @@
             <div id="intro-icon" class="common-pad">
                 <div id="intro-wrapper" class="wrapper">
                     <div id="intro-text">
-                        Leveraging Blockchain technology to advise on and develop customized product solutions for our client partners. 
+                        Leveraging Blockchain technology to advise on and develop customized product solutions for our client partners.
                     </div>
                 </div>
             </div>
@@ -351,7 +351,7 @@
                     </div>
                     <div class="team-text">
                         <h4 class="names">Adam Lemmon</h4>
-                        <h5>VP, Training & Operations</h5>
+                        <h5>VP, Technology & Operations</h5>
                         <br>
                         Adam is a technology enthusiast and passionate engineer. Prior to joining Blockchain Learning Group, Adam contributed to a wide range of Blockchain projects as well as lead various development workshops in Australia and Canada. Adam is inspired by the potential of Blockchain technology and actively is helping to build the global community.
                     </div>
@@ -382,15 +382,15 @@
         <div id="footer" class="common-pad">
             &copy; 2018 Blockscale Solutions Inc.<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span><br>Site by <a href="http://takeoverstudio.com" target="_blank" title="Website by Takeover Studio">Takeover</a>
             <div id="footer-social">
-                <a href="https://www.linkedin.com/company/blockscale-solutions-inc/" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://github.com/BlockscaleSolutions" target="_blank"><i class="fab fa-github"></i></a><a href="NEED" target="_blank"><i class="fab fa-twitter"></i></a>    
+                <a href="https://www.linkedin.com/company/blockscale-solutions-inc/" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://github.com/BlockscaleSolutions" target="_blank"><i class="fab fa-github"></i></a><a href="NEED" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
-                    
+
         <!-- Smooth Scroll -->
         <script>
             jQuery(function($) {
        		$(document).ready(function(){
-			$(window).load(function() {	
+			$(window).load(function() {
                 // Select all links with hashes
                 $('a[href*="#"]')
                 // Remove links that don't actually link to anything
@@ -400,8 +400,8 @@
                 .click(function(event) {
                     // On-page links
                     if (
-                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-                    && 
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
                     location.hostname == this.hostname
                     ) {
                         // Figure out element to scroll to
@@ -434,6 +434,6 @@
             });
 
         </script>
-        
+
     </body>
 </html>
