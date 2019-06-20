@@ -427,7 +427,7 @@ a.smooth-link {
     height: 500px;
     color: #ffffff;
     font-family: 'Muli', sans-serif;
-    font-size: 50px;
+    font-size: 31px;
     font-weight: 200;
     line-height: 60px;
     /* Center slide text vertically */
@@ -840,7 +840,7 @@ a.phone:hover {
     #intro-text {
         width: 80%;
         height: 400px;
-        font-size: 40px;
+        font-size: 28px;
         line-height: 40px;
     }
 
