@@ -488,7 +488,7 @@ ul#about-list li {
 	float: left;
 	width: calc(33.33% - 33.33px);
 	margin-right: 50px;
-    text-align: center;
+    text-align: left;
 }
 
 ul#about-list li .about-icon {
