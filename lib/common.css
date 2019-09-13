@@ -500,9 +500,7 @@ ul#about-list li .about-icon {
 }
 
 ul#about-list li .about-img {
-    padding-bottom: 11px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 ul#about-list li:nth-child(3n+3) {
