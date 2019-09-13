@@ -499,6 +499,14 @@ ul#about-list li .about-icon {
 	padding-bottom: 11px;
 }
 
+ul#about-list li .about-img {
+    color: #22aeff;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: normal;
+	padding-bottom: 11px;
+}
+
 ul#about-list li:nth-child(3n+3) {
 	margin-right: 0px;
 }
