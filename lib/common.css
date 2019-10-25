@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro-wrapper {
-    height: 500px;
+    height: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -894,6 +894,16 @@ a.contact-link:hover {
     height: auto;
 }
 
+.logos-list img.diacc {
+    width: 141px;
+    height: auto;
+}
+
+.logos-list img.birdlife {
+    width: 70px;
+    height: auto;
+}
+
 .logos-list img.tmx {
     width: 70px;
     height: auto;
@@ -1405,6 +1415,14 @@ a.contact-link:hover {
 
     .logos-list a {
         margin: 12px 18px;    
+    }
+    
+    .logos-list img.diacc {
+        width: 113px;
+    }
+
+    .logos-list img.birdlife {
+        width: 56px;
     }
 
     .logos-list img.govtech {
