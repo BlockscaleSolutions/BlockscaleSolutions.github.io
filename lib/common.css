@@ -919,7 +919,17 @@ a.contact-link:hover {
     height: auto;
 }
 
+.logos-list img.tfa {
+    width: 55px;
+    height: auto;
+}
+
 .logos-list img.linamar {
+    width: 141px;
+    height: auto;
+}
+
+.logos-list img.ims {
     width: 141px;
     height: auto;
 }
@@ -1242,8 +1252,16 @@ a.contact-link:hover {
     .logos-list img.agl {
         width: 55px;
     }
+    
+    .logos-list img.tfa {
+        width: 55px;
+    }
 
     .logos-list img.linamar {
+        width: 141px;
+    }
+
+    .logos-list img.ims {
         width: 141px;
     }
 
@@ -1444,8 +1462,16 @@ a.contact-link:hover {
     .logos-list img.agl {
         width: 44px;
     }
+    
+    .logos-list img.tfa {
+        width: 44px;
+    }
 
     .logos-list img.linamar {
+        width: 113px;
+    }
+
+    .logos-list img.ims {
         width: 113px;
     }
 
