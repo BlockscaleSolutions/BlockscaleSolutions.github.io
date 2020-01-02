@@ -888,6 +888,11 @@ a.contact-link:hover {
     height: auto;
 }
 
+.logos-list img.w3c {
+    width: 111px;
+    height: auto;
+}
+
 .logos-list img.sovrin {
     width: 119px;
     height: auto;
