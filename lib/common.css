@@ -545,7 +545,7 @@ h4 {
 }
 
 .news-item-img img.undp {
-    width: 185px;  
+    width: 55px;  
 }
 
 .news-item-img img.startup {
@@ -923,7 +923,7 @@ a.contact-link:hover {
 }
 
 .logos-list img.undp {
-    width: 73px;
+    width: 53px;
     height: auto;
 }
 
@@ -1259,7 +1259,7 @@ a.contact-link:hover {
     }
 
     .logos-list img.undp {
-        width: 73px;
+        width: 53px;
     }
 
     .logos-list img.agl {
