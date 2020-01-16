@@ -493,7 +493,7 @@ h4 {
 }
 
 #news-content {
-    padding-top: 117px;
+    padding-top: 57px;
     margin: 0px -5px;
     overflow: hidden;
 }
@@ -558,6 +558,10 @@ h4 {
 
 .news-item-img img.forbes {
     width: 200px;  
+}
+
+.news-item-img img.cointelegraph {
+    width: 220px;  
 }
 
 .news-item-img img.default {
@@ -1109,7 +1113,7 @@ a.contact-link:hover {
     }
 
     #news-content {
-        padding-top: 94px;
+        padding-top: 24px;
     }
 
     .news-item { 
