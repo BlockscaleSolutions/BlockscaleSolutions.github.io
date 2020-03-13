@@ -53,7 +53,7 @@
         <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <script type="text/javascript">
 		
-			$("[ata-fancybox]").fancybox({
+			$("[data-fancybox]").fancybox({
 				// Options will go here
 			});
 			
@@ -276,7 +276,7 @@
                                 <div class="news-item-wrapper">
                                     <div class="news-item-img">
                                         <a href="https://www.bbc.co.uk/news/business-51315490" target="_blank">
-                                            <img src="/img/common/bbc-news.jpg" alt="BBC News" class="forbes">
+                                            <img src="/img/common/news-bbcnews.jpg" alt="BBC News" class="bbcnews">
                                         </a>
                                     </div>
                                     <div class="news-item-text">
@@ -332,12 +332,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="news-content">
-                    <div id="news-content-wrapper">
-                        <div id="news-flex">
                             <div class="news-item">
                                 <div class="news-item-wrapper">
                                     <div class="news-item-img">
@@ -438,7 +432,7 @@
                         <!-- Kate Radionoff -->
                         <div class="team-item">
                             <div class="team-item-img">
-                                <img src="/img/common/team-kate-r.jpeg" alt="Kate Radionoff">
+                                <img src="/img/common/team-kate-r.jpg" alt="Kate Radionoff">
                             </div>
                             <div class="team-item-text">
                                 <h3>Kate Radionoff</h3>
@@ -495,7 +489,7 @@
                         <!-- Paul Makin -->
                         <div class="team-item">
                             <div class="team-item-img">
-                                <img src="/img/common/team-paul-m.jpeg" alt="Paul Makin">
+                                <img src="/img/common/team-paul-m.jpg" alt="Paul Makin">
                             </div>
                             <div class="team-item-text">
                                 <h3>Paul Makin</h3>
@@ -553,17 +547,18 @@
                             </div>
                             <div class="clear"></div>
                         </div>
+
                         <!-- Antti Kettunen -->
                         <div class="team-item">
                             <div class="team-item-img">
                                 <img src="/img/common/team-antti-k.jpg" alt="Antti Kettunen">
                             </div>
                             <div class="team-item-text">
+                                <h4>Digital Identity</h4>
                                 <h3>Antti Kettunen</h3>
                                 Special Advisor - Digital Identity
                                 <div class="team-item-link">
-                                    <i class="fas fa-user-circle"></i> 
-                                    <a data-fancybox data-touch="false" data-src="#profile-antti-k" href="javascript:;">view profile</a>
+                                    <i class="fas fa-user-circle"></i> <a data-fancybox data-touch="false" data-src="#profile-antti-k" href="javascript:;">view profile</a>
                                 </div>
                             </div>
                             <div class="clear"></div>
@@ -741,6 +736,7 @@
                             </div>
                             <div class="clear"></div>
                         </div>
+
                         <div class="clear"></div>
                     </div>
                 </div>
@@ -767,15 +763,7 @@
                     Partners
                 </div>
                 <div id="partners-content" class="logos-list">
-                    <a href="https://www.tech.gov.sg/" target="_blank">
-                        <img src="/img/logos/govtech.png" alt="GovTech" class="govtech">
-                    </a>
-                    <a href="https://www.w3.org/" target="_blank">
-                        <img src="/img/logos/w3c.png" alt="W3C" class="w3c">
-                    </a>
-                    <a href="https://sovrin.org/" target="_blank"><img src="/img/logos/sovrin.png" alt="Sovrin" class="sovrin"></a><a href="https://www.undp.org/content/undp/en/home.html" target="_blank"><img src="/img/logos/undp.png" alt="United Nations Development Programme" class="undp"></a><a href="https://textileexchange.org/" target="_blank"><img src="/img/logos/textileexchange.png" alt="Textile Exchange" class="textileexchange"></a><a href="https://diacc.ca/" target="_blank"><img src="/img/logos/diacc.png" alt="Digital ID & Authentication Council of Canada" class="diacc"></a><a href="https://www.birdlife.org/" target="_blank"><img src="/img/logos/birdlife.png" alt="BirdLife International" class="birdlife"></a>
-                    
-                    <a href="https://www.imsglobal.org/" target="_blank"><img src="/img/logos/ims.png" alt="IMS Global Learning Consortium" class="ims"></a><a href="https://www.tfa2020.org/en/" target="_blank"><img src="/img/logos/tfa.png" alt="Tropical Forest Alliance" class="tfa"></a>
+                    <a href="https://www.tech.gov.sg/" target="_blank"><img src="/img/logos/govtech.png" alt="GovTech" class="govtech"></a><a href="https://www.w3.org/" target="_blank"><img src="/img/logos/w3c.png" alt="W3C" class="w3c"></a><a href="https://sovrin.org/" target="_blank"><img src="/img/logos/sovrin.png" alt="Sovrin" class="sovrin"></a><a href="https://www.undp.org/content/undp/en/home.html" target="_blank"><img src="/img/logos/undp.png" alt="United Nations Development Programme" class="undp"></a><a href="https://textileexchange.org/" target="_blank"><img src="/img/logos/textileexchange.png" alt="Textile Exchange" class="textileexchange"></a><a href="https://diacc.ca/" target="_blank"><img src="/img/logos/diacc.png" alt="Digital ID & Authentication Council of Canada" class="diacc"></a><a href="https://www.birdlife.org/" target="_blank"><img src="/img/logos/birdlife.png" alt="BirdLife International" class="birdlife"></a><a href="https://www.imsglobal.org/" target="_blank"><img src="/img/logos/ims.png" alt="IMS Global Learning Consortium" class="ims"></a><a href="https://www.tfa2020.org/en/" target="_blank"><img src="/img/logos/tfa.png" alt="Tropical Forest Alliance" class="tfa"></a>
                 </div>
             </div>
             <div id="clients-logos" class="logos-block">
@@ -795,7 +783,7 @@
         </div>
         <footer id="footer" class="common-pad">
             <div id="footer-wrapper" class="wrapper">
-                &copy; <?php echo date("Y"); ?> Convergence.Tech Inc.<br>
+                &copy; 2020 Convergence.Tech Inc.<br>
             </div>
         </footer>
         
