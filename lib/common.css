@@ -965,6 +965,11 @@ a.contact-link:hover {
     height: auto;
 }
 
+.logos-list img.steam {
+    width: 204px;
+    height: auto;
+}
+
 #footer {
     height: 116px;
 }
@@ -1294,6 +1299,10 @@ a.contact-link:hover {
         width: 104px;
     }
 
+    .logos-list img.steam {
+        width: 124px;
+    }
+
     #footer {
         height: 96px;
     }
@@ -1501,6 +1510,10 @@ a.contact-link:hover {
     }
 
     .logos-list img.toronto {
+        width: 83px;
+    }
+
+    .logos-list img.steam {
         width: 83px;
     }
 
